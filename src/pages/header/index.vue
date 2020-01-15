@@ -4,7 +4,7 @@
     <el-row :gutter="24">
       <!-- 系统名称 -->
       <el-col :span="18">
-        <span class="system-name">神州医疗权限系统</span>
+        <span class="system-name">神州医疗项目模版</span>
       </el-col>
       <!-- 用户信息 -->
       <el-col
