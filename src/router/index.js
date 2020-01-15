@@ -39,6 +39,10 @@ const Layout = (resolve) => import('@/pages/layout/index').then(module => {
   resolve(module)
 })
 
+const Steps = (resolve) => import('@/pages/components/steps').then(module => {
+  resolve(module)
+})
+
 Vue.use(Router)
 
 export default new Router({
@@ -91,6 +95,10 @@ export default new Router({
           path: '/tooltip',
           name: 'tooltip',
           component: Tooltip
+        }, {
+          path: '/steps',
+          name: 'steps',
+          component: Steps
         }
       ]
     }

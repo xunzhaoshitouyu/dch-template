@@ -81,6 +81,10 @@ export default {
           title: '提示信息',
           index: '/tooltip',
           children: null
+        }, {
+          title: '步骤条',
+          index: '/steps',
+          children: null
         }
       ]
     }

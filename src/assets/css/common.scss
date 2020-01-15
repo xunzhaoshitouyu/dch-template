@@ -184,3 +184,10 @@ $basic-color: #4386e2;
     color: #fff;
   }
 }
+
+// 步骤条
+.dch-steps {
+  .dch-finish-step {
+    cursor: pointer;
+  }
+}
