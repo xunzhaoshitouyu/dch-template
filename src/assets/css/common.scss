@@ -1,0 +1,186 @@
+$basic-color: #4386e2;
+
+.api {
+  margin: 10px 20px;
+
+  li {
+    list-style: disc;
+  }
+}
+
+// 布局
+.dch-container {
+  width: 100%;
+  min-height: 100%;
+  background: #F3F3F3;
+  flex-direction: column;
+
+  .dch-header {
+    height: 60px;
+    line-height: 60px;
+    background: $basic-color;
+    color: #fff;
+
+    .system-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .user-info {
+      text-align: right;
+
+      .dch-dropdown-link {
+        color: #fff;
+      }
+    }
+  }
+
+  .dch-container-content {
+    flex: 1;
+    margin: 10px 20px 20px;
+
+
+    .dch-aside {
+      background: #fff;
+      margin-right: 10px;
+    }
+
+    .dch-main {
+      padding: 0;
+    }
+  }
+}
+
+// Input
+.dch-input {
+  border-radius: 4px;
+  margin: 0 10px 10px 0;
+  width: 200px;
+
+  &:hover {
+    border-color: $basic-color;
+  }
+
+  &:focus {
+    border-color: $basic-color;
+    box-shadow: none;
+  }
+}
+
+// Select
+.dch-select {
+  min-width: 120px;
+  border-radius: 4px;
+  margin: 0 10px 10px 0;
+
+  &:hover {
+    border-color: $basic-color;
+  }
+
+  &:focus {
+    border-color: $basic-color;
+    box-shadow: none;
+  }
+}
+
+// Button
+.dch-button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 10px 10px 0;
+}
+
+.main-btn {
+  background: #4386e2;
+}
+
+.sub-btn {
+  background: #87baff;
+
+}
+
+// Table
+.dch-table {
+  .el-table__header {
+    height: 56px;
+    font-size: 16px;
+
+    thead {
+      tr {
+        th {
+          background: $basic-color;
+          color: #fff;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.dch-pagination {
+  text-align: center;
+}
+
+// 主内容区域
+.dch-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+}
+
+.dch-tree {
+  width: 200px;
+  border: 1px solid rgba(243, 243, 243, 1);
+  margin-right: 10px;
+}
+
+// 模态窗
+.dch-modal {
+  .el-dialog__header {
+    background: $basic-color;
+
+    .el-dialog__title {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .el-dialog__headerbtn {
+      .el-dialog__close {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .el-dialog__footer {
+    text-align: center;
+  }
+}
+
+// tooltip
+.dch-tooltip {
+  background: rgba(33, 33, 33, 1);
+  opacity: 0.7;
+  border-radius: 2px;
+  border-width: 0;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+
+  .el-message__icon {
+    display: none;
+  }
+
+  .el-message__content {
+    font-size: 32px;
+    color: #fff;
+  }
+}
