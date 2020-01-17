@@ -85,6 +85,11 @@ export default {
           title: '步骤条',
           index: '/steps',
           children: null
+        },
+        {
+          title: '预览PDF',
+          index: '/previewPDF',
+          children: null
         }
       ]
     }

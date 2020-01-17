@@ -43,6 +43,10 @@ const Steps = (resolve) => import('@/pages/components/steps').then(module => {
   resolve(module)
 })
 
+const PreviewPDF = (resolve) => import('@/pages/components/PreviewPDF').then(module => {
+  resolve(module)
+})
+
 Vue.use(Router)
 
 export default new Router({
@@ -99,6 +103,11 @@ export default new Router({
           path: '/steps',
           name: 'steps',
           component: Steps
+        },
+        {
+          path: '/previewPDF',
+          name: 'previewPDF',
+          component: PreviewPDF
         }
       ]
     }

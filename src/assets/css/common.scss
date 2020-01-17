@@ -209,3 +209,18 @@ $basic-color: #4386e2;
     cursor: pointer;
   }
 }
+
+// pdf预览组件
+
+.dch-pdf-toolBar {
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dch-pdf-content {
+  width: 50%;
+}
