@@ -13,10 +13,11 @@
           {{step.title}}
         </template>
         <template slot="icon">
-          <i
-            :class="step.icon"
+          <img
+            :src="step.icon"
+            alt=""
             @click="goStep(index)"
-          ></i>
+          >
         </template>
       </el-step>
     </el-steps>
@@ -47,15 +48,15 @@ export default {
       steps: [
         {
           title: '修改',
-          icon: 'el-icon-edit'
+          icon: require('@/assets/images/annotations.review.png')
         },
         {
           title: '用户',
-          icon: 'el-icon-user'
+          icon: require('@/assets/images/basic.information.png')
         },
         {
           title: '商品',
-          icon: 'el-icon-goods'
+          icon: require('@/assets/images/Clinical Trials_2.png')
         }
       ]
     }
