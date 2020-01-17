@@ -10,11 +10,11 @@
         :key="index"
       >
         <template slot="title">
-          {{step.title}}
+          {{step.title}}{{active>=index}}
         </template>
         <template slot="icon">
           <img
-            :src="step.icon"
+            :src="active>=index?step.finishIcon:step.icon"
             alt=""
             @click="goStep(index)"
           >
@@ -48,15 +48,18 @@ export default {
       steps: [
         {
           title: '修改',
-          icon: require('@/assets/images/annotations.review.png')
+          icon: require('@/assets/images/annotations.review-gray.png'),
+          finishIcon: require('@/assets/images/annotations.review.png')
         },
         {
           title: '用户',
-          icon: require('@/assets/images/basic.information.png')
+          icon: require('@/assets/images/basic.information-gray.png'),
+          finishIcon: require('@/assets/images/basic.information.png')
         },
         {
           title: '商品',
-          icon: require('@/assets/images/Clinical Trials_2.png')
+          icon: require('@/assets/images/Clinical Trials_3.png'),
+          finishIcon: require('@/assets/images/Clinical Trials_2.png')
         }
       ]
     }

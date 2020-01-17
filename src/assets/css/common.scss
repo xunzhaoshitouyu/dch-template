@@ -187,8 +187,17 @@ $basic-color: #4386e2;
 
 // 步骤条
 .dch-steps {
+  .el-step {
+    .el-step__line {
+      top: 20px;
+      left: 40px;
+    }
+  }
+
   .el-step__icon {
     border-width: 0;
+    width: 40px;
+    height: 40px;
 
     img {
       width: 100%;
