@@ -10,7 +10,10 @@
         class="dch-aside"
         width="200px"
       >
-        <el-menu router>
+        <el-menu
+          router
+          :default-active="defaultActive"
+        >
           <nav-menu :menus="menus"></nav-menu>
         </el-menu>
       </el-aside>
@@ -29,7 +32,7 @@ export default {
   data () {
     return {
       userName: 'admin',
-      activeMenuIndex: '2', // 当前激活菜单的 index
+      defaultActive: '/menu', // 当前激活菜单的 index
       menus: [ // 菜单项数据
         {
           title: '布局',
@@ -93,6 +96,9 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    this.$router.push({ path: this.defaultActive })
   }
 }
 </script>
